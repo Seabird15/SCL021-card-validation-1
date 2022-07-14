@@ -13,8 +13,7 @@ Este sitio web esta destinado a entregar una herramienta de agendamiento de hora
 
 3. Primer prototipo 
 
-![](./src/Media/85ecc366-20cd-4a23-8a02-911575529b8a.jpg)
-
+![](./src/Media/85ecc366-20cd-4a23-8a02-911575529b8a.jpg)}
 4. Prototipo final 
 
 ![](./src/Media/prototipofinal.png)

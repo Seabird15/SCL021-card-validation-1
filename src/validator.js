@@ -2,19 +2,21 @@
 const validator = {
   isValid:(cardnumber) => {
   
-    //convertir input
+    //convertir input, se dividen los numeros ingresados en numeros individuales y se convierte en un Array y se cambia a tipo number
   
     let ingresar= cardnumber.split("").map(Number);
+
+    //se invierte el orden del array
     ingresar = ingresar.reverse();
   
     let total = 0;
   
-    //multiplicar
+    //multiplicar x2 cada numero en posicion par
     for(let i=0; i< ingresar.length; i++) {
       if (i % 2 !==0) {
         ingresar [i] = ingresar [i] *2;
   
-        //resultado
+        //resultado, se busca numeros mayores a 9 y se resta 9
   
         if (ingresar [i] >=10) {
           ingresar [i] -= 9;
@@ -23,7 +25,7 @@ const validator = {
   
       }
   
-      //sumar
+      //sumar los digitos del array y obtener el total
   
       total += ingresar[i];
   
